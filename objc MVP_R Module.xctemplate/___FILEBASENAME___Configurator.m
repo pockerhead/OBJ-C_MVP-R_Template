@@ -27,6 +27,7 @@
     ___VARIABLE_productName:identifier___Router *router = [[___VARIABLE_productName:identifier___Router alloc] init];
     ___VARIABLE_productName:identifier___Presenter *presenter = [[___VARIABLE_productName:identifier___Presenter alloc] initWithView:view router:router];
     view.presenter = presenter;
+    router.viewController = view;
     return view;
 }
 
