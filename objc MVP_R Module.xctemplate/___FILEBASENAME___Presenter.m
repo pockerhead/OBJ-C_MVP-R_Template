@@ -19,8 +19,7 @@
 
 @implementation ___VARIABLE_productName:identifier___Presenter
 
-- (instancetype)initWithView:(NSObject<___VARIABLE_productName:identifier___View>*)view router:(NSObject<___VARIABLE_productName:identifier___WireframeInterface>*)router
-{
+- (instancetype)initWithView:(NSObject<___VARIABLE_productName:identifier___View>*)view router:(NSObject<___VARIABLE_productName:identifier___WireframeInterface>*)router {
     self = [super init];
     if (self) {
         self.view = view;
