@@ -13,26 +13,16 @@
 
 @implementation ___VARIABLE_productName:identifier___Router
 
-- (void)navigateToOption:(___VARIABLE_productName:identifier___NavigationOption)option {
-    UIViewController *vc;
-    switch (option) {
-        case dissmis:
-            [self.viewController dismissViewControllerAnimated:true completion:nil];
-            return;
-        case pop:
-            if (self.viewController.navigationController){
-                [self.viewController.navigationController popViewControllerAnimated:true];
-            }
-            return;
-        case auth:
-            break;
-    }
-    
+- (void)navigateToDismiss { 
+    [self.viewController dismissViewControllerAnimated:true completion:nil];
+}
+
+- (void)navigateTo:(UIViewController *)vc {
     if([vc isKindOfClass:[UINavigationController class]]){
         [self.viewController presentViewController:vc animated:true completion:nil];
     } else if ([vc isKindOfClass:[UIViewController class]]) {
         if (self.viewController.navigationController){
-            [self.viewController.navigationController presentViewController:vc animated:true completion:nil];
+            [self.viewController.navigationController pushViewController:vc animated:true];
         } else {
             [self.viewController presentViewController:vc animated:true completion:nil];
         }

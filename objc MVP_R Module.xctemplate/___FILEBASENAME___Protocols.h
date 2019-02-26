@@ -12,15 +12,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef enum : NSUInteger {
-    dissmis = 0,
-    pop = 1,
-    auth = 2,
-} ___VARIABLE_productName:identifier___NavigationOption;
-
+//Router implement navigateTo func
 @protocol ___VARIABLE_productName:identifier___WireframeInterface <NSObject>
 
-@required - (void)navigateToOption:(___VARIABLE_productName:identifier___NavigationOption)option;
+//example
+@required - (void)navigateToDismiss;
 
 @end
 
