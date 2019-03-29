@@ -10,7 +10,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ___VARIABLE_productName:identifier___Configurator: NSObject
+@interface ___VARIABLE_productName:identifier___Assembly: NSObject
 
 + (UIViewController *)createModule;
 

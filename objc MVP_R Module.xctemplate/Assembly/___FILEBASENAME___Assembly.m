@@ -10,17 +10,17 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "___VARIABLE_productName:identifier___Configurator.h"
+#import "___VARIABLE_productName:identifier___Assembly.h"
 #import "___VARIABLE_productName:identifier___ViewController.h"
 #import "___VARIABLE_productName:identifier___Presenter.h"
 #import "___VARIABLE_productName:identifier___Protocols.h"
 #import "___VARIABLE_productName:identifier___Router.h"
 
-@interface ___VARIABLE_productName:identifier___Configurator ()
+@interface ___VARIABLE_productName:identifier___Assembly ()
 
 @end
 
-@implementation ___VARIABLE_productName:identifier___Configurator
+@implementation ___VARIABLE_productName:identifier___Assembly
 
 + (UIViewController *)createModule {
     ___VARIABLE_productName:identifier___ViewController *view = [[___VARIABLE_productName:identifier___ViewController alloc] init];
